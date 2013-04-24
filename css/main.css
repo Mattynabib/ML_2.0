@@ -1,0 +1,1276 @@
+/*
+ * HTML5 Boilerplate SASS? ML
+ *
+ * THIS IS MY ATTEMPT AT A SASS VERSION 
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+/* ==========================================================================
+   
+   NOTES:
+   UPDATED: 09-28-12
+   
+   Things to add/try/fix:
+   
+   - Figure out how to conditionally load the proper slider
+   - Keep of remove image in blog sidebar mode?
+      
+   
+========================================================================== */
+/* line 36, ../sass/main.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none; }
+
+/* line 46, ../sass/main.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 56, ../sass/main.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 59, ../sass/main.scss */
+body {
+  line-height: 1; }
+
+/* line 62, ../sass/main.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 65, ../sass/main.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 69, ../sass/main.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 73, ../sass/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 82, ../sass/main.scss */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+/*
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Cardo', serif;
+*/
+/* ====================================================================================================================
+   Author's custom variables
+   ==================================================================================================================== */
+/* line 119, ../sass/main.scss */
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  color: #000;
+  font-family: "Cardo", "Times", serif; }
+
+/* line 126, ../sass/main.scss */
+a {
+  font-family: "Cardo", "Times", serif;
+  color: #663333;
+  border: none;
+  text-decoration: none; }
+
+/* line 133, ../sass/main.scss */
+a:hover {
+  text-decoration: underline; }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+/* line 143, ../sass/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 148, ../sass/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 153, ../sass/main.scss */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * A better looking default horizontal rule
+ */
+/* line 163, ../sass/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 172, ../sass/main.scss */
+.hspacerMain {
+  visibility: hidden;
+  min-height: 3em;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 179, ../sass/main.scss */
+.hspacerSide {
+  visibility: hidden;
+  min-height: 1em;
+  margin: 1em 0;
+  padding: 0; }
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+/* line 190, ../sass/main.scss */
+img {
+  vertical-align: middle; }
+
+/*
+ * Remove default fieldset styles.
+ */
+/* line 198, ../sass/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+/* line 208, ../sass/main.scss */
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+/* line 216, ../sass/main.scss */
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ====================================================================================================================
+   MIXINS
+   ==================================================================================================================== */
+/* line 251, ../sass/main.scss */
+section .flexslider {
+  position: relative;
+  margin: 1.5em auto 3em auto;
+  min-width: 19em;
+  max-width: 49em; }
+
+/* ====================================================================================================================
+   Author's custom styles
+   ==================================================================================================================== */
+/* line 263, ../sass/main.scss */
+body {
+  background-color: white; }
+
+/* line 268, ../sass/main.scss */
+#wrapper {
+  background-color: white;
+  display: block;
+  width: 68.75em;
+  max-width: 90%;
+  margin: 1em auto 0 auto;
+  position: relative;
+  min-height: 100%; }
+
+/* line 278, ../sass/main.scss */
+header {
+  display: block;
+  width: 100%;
+  height: 4em;
+  margin: .6em 0; }
+
+/* line 285, ../sass/main.scss */
+h1 {
+  color: #333;
+  font-family: "Hammersmith One", "Gotham", "Helvetica", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  line-height: 2em; }
+
+/* line 293, ../sass/main.scss */
+h2 {
+  color: #333;
+  font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+  font-size: 1.5em;
+  /*	font-weight: bold;
+  */
+  line-height: 1.3em; }
+
+/* line 301, ../sass/main.scss */
+p {
+  margin: 0 0 1.1em 0; }
+
+/* line 305, ../sass/main.scss */
+nav {
+  position: static;
+  line-height: 3em; }
+  /* line 308, ../sass/main.scss */
+  nav ul {
+    float: right; }
+  /* line 312, ../sass/main.scss */
+  nav li {
+    display: inline;
+    border-left: 1px #cccccc solid; }
+    /* line 316, ../sass/main.scss */
+    nav li a {
+      font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+      text-align: center;
+      padding: .2em .8em;
+      margin: 0 0 0 .3em;
+      color: #663333; }
+    /* line 323, ../sass/main.scss */
+    nav li a.activeLink {
+      background-color: #ffcc00; }
+    /* line 326, ../sass/main.scss */
+    nav li a:hover {
+      background-color: #ffcc00;
+      text-decoration: none; }
+  /* line 331, ../sass/main.scss */
+  nav li:first-child {
+    border: none; }
+
+/* line 336, ../sass/main.scss */
+.logo {
+  display: block;
+  float: left;
+  background-image: url(../img/logo1.jpg);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  padding-top: 2em;
+  width: 6em; }
+
+/* line 349, ../sass/main.scss */
+#backToTop {
+  visibility: hidden;
+  position: absolute; }
+
+/* line 354, ../sass/main.scss */
+#mainContent {
+  background-color: white;
+  display: block;
+  float: left;
+  padding: 0;
+  margin-top: 10.5em;
+  width: 68%; }
+
+/* line 364, ../sass/main.scss */
+#sideBar {
+  display: block;
+  min-height: 200px;
+  float: right;
+  border-left: 1px #cccccc solid;
+  padding: 0em 1em;
+  margin-top: 1.5em;
+  width: 28%; }
+  /* line 367, ../sass/main.scss */
+  #sideBar h2 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: .4em; }
+  /* line 372, ../sass/main.scss */
+  #sideBar p {
+    font-size: .8em;
+    line-height: 1.2em; }
+  /* line 382, ../sass/main.scss */
+  #sideBar .feedThumb {
+    float: left;
+    margin-right: .5em; }
+  /* line 388, ../sass/main.scss */
+  #sideBar #twitter_div a {
+    font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+    color: #663333;
+    font-size: .7em;
+    text-decoration: none; }
+  /* line 394, ../sass/main.scss */
+  #sideBar #twitter_div ul li {
+    font-family: "Cardo", "Times", serif;
+    font-size: .7em;
+    line-height: 1.3em;
+    margin-bottom: 1em; }
+    /* line 398, ../sass/main.scss */
+    #sideBar #twitter_div ul li a {
+      font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+      color: #663333;
+      text-decoration: none; }
+    /* line 404, ../sass/main.scss */
+    #sideBar #twitter_div ul li .theTweet {
+      color: #000;
+      font-family: "Cardo", "Times", serif;
+      font-size: 1em;
+      line-height: 1.3em; }
+  /* line 414, ../sass/main.scss */
+  #sideBar #blogfeed {
+    border-bottom: 1px solid #cccccc;
+    margin-bottom: 1em; }
+    /* line 415, ../sass/main.scss */
+    #sideBar #blogfeed a {
+      font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+      color: #663333;
+      text-decoration: none; }
+    /* line 420, ../sass/main.scss */
+    #sideBar #blogfeed h3 {
+      font-size: .8em;
+      line-height: 1.1em;
+      margin-bottom: .4em; }
+    /* line 425, ../sass/main.scss */
+    #sideBar #blogfeed p {
+      font-family: "Cardo", "Times", serif;
+      font-size: .7em;
+      line-height: 1.2em;
+      margin-bottom: 1.2em; }
+    /* line 431, ../sass/main.scss */
+    #sideBar #blogfeed span {
+      font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+      font-size: .6em;
+      float: right; }
+    /* line 436, ../sass/main.scss */
+    #sideBar #blogfeed img {
+      margin-top: .5em;
+      clear: both;
+      float: none;
+      width: 100%;
+      margin-bottom: 1em; }
+
+/* line 449, ../sass/main.scss */
+footer {
+  background-color: #cccccc;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 0px;
+  height: 2.5em;
+  width: 100%; }
+  /* line 457, ../sass/main.scss */
+  footer #social {
+    min-width: 18em;
+    float: right;
+    position: relative;
+    padding: .6em 0em 1em 0em; }
+    /* line 462, ../sass/main.scss */
+    footer #social li {
+      display: inline; }
+    /* line 465, ../sass/main.scss */
+    footer #social a {
+      font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+      text-align: center;
+      color: #000;
+      font-size: .7em;
+      padding: .5em .3em .4em 2.2em;
+      margin-right: .1em;
+      width: 25%;
+      background-position: 5% 50%;
+      background-repeat: no-repeat; }
+      /* line 475, ../sass/main.scss */
+      footer #social a.linkedin {
+        background-image: url(../img/linkedInIcon1.png); }
+      /* line 478, ../sass/main.scss */
+      footer #social a.facebook {
+        background-image: url(../img/facebookIcon1.png); }
+      /* line 481, ../sass/main.scss */
+      footer #social a.twitter {
+        background-image: url(../img/twitterIcon1.png); }
+      /* line 484, ../sass/main.scss */
+      footer #social a.resume {
+        background-image: url(../img/resumeIcon1.png); }
+    /* line 488, ../sass/main.scss */
+    footer #social a:hover {
+      background-color: #adadad;
+      text-decoration: none; }
+
+/* line 497, ../sass/main.scss */
+#mainColumn {
+  width: 96%;
+  margin: 0em 1em; }
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+/* line 512, ../sass/main.scss */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px; }
+
+/* line 520, ../sass/main.scss */
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%; }
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+/* line 531, ../sass/main.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden; }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+/* line 540, ../sass/main.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+/* line 557, ../sass/main.scss */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+/* line 570, ../sass/main.scss */
+.invisible {
+  visibility: hidden; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/* line 587, ../sass/main.scss */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 592, ../sass/main.scss */
+.clearfix:after {
+  clear: both; }
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+/* line 601, ../sass/main.scss */
+.clearfix {
+  *zoom: 1; }
+
+/* ==========================================================================
+  								MEDIA QUERIES  
+   ========================================================================== */
+@media only screen and (min-width: 37.5em) {
+  /* =========== THIS STUFF IS FOR STYLES THAT SHOULD SHOW UP *ONLY* ON LARGER LAYOUTS =========== */
+  /* line 613, ../sass/main.scss */
+  a.menu-link, #smallSlider {
+    display: none; }
+
+  /* line 617, ../sass/main.scss */
+  #bigSlider {
+    display: block; }
+
+  /* line 621, ../sass/main.scss */
+  .js nav[role=navigation] {
+    max-height: none; } }
+@media only screen and (max-width: 68.75em) {
+  /* line 627, ../sass/main.scss */
+  #wrapper {
+    width: 68.75em;
+    max-width: 90%; } }
+@media only screen and (max-width: 48em) {
+  /* line 634, ../sass/main.scss */
+  #wrapper {
+    width: 48em;
+    max-width: 90%; }
+
+  /* line 638, ../sass/main.scss */
+  nav {
+    position: static;
+    bottom: 0px;
+    width: auto; }
+
+  /* line 643, ../sass/main.scss */
+  #sideBar {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    float: none;
+    clear: both;
+    width: 100%;
+    padding: 1em;
+    min-height: 100px;
+    position: static;
+    border: none;
+    background-color: #DDD; }
+    /* line 659, ../sass/main.scss */
+    #sideBar #twitter_div {
+      /*			a {
+      				font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+      				color: $linkColors;
+      				font-size: 1em;
+      				text-decoration:none;
+      			}
+      */ }
+      /* line 666, ../sass/main.scss */
+      #sideBar #twitter_div ul li {
+        font-family: "Cardo", "Times", serif;
+        font-size: 1em;
+        line-height: 1.1em;
+        margin-bottom: 1em; }
+        /* line 670, ../sass/main.scss */
+        #sideBar #twitter_div ul li a {
+          font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+          color: #663333;
+          text-decoration: none; }
+          /* line 674, ../sass/main.scss */
+          #sideBar #twitter_div ul li a :hover {
+            background-color: #ffc; }
+        /* line 679, ../sass/main.scss */
+        #sideBar #twitter_div ul li .theTweet {
+          color: #000;
+          font-family: "Cardo", "Times", serif;
+          font-size: 1em;
+          line-height: 1.3em; }
+      /* line 686, ../sass/main.scss */
+      #sideBar #twitter_div #twitter-link {
+        display: block;
+        text-align: right; }
+    /* line 691, ../sass/main.scss */
+    #sideBar #blogfeed {
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 1em; }
+      /* line 692, ../sass/main.scss */
+      #sideBar #blogfeed li {
+        margin-bottom: 2em; }
+      /* line 695, ../sass/main.scss */
+      #sideBar #blogfeed h3 {
+        font-size: 1em;
+        line-height: 1.3em;
+        margin-bottom: .4em; }
+        /* line 699, ../sass/main.scss */
+        #sideBar #blogfeed h3 :hover {
+          background-color: #ffc; }
+        /* line 702, ../sass/main.scss */
+        #sideBar #blogfeed h3 a {
+          font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+          color: #663333;
+          text-decoration: none; }
+      /* line 708, ../sass/main.scss */
+      #sideBar #blogfeed p {
+        font-family: "Cardo", "Times", serif;
+        font-size: .9em;
+        line-height: 1.2em;
+        margin-bottom: 1.5em; }
+      /* line 714, ../sass/main.scss */
+      #sideBar #blogfeed span {
+        font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+        font-size: .8em;
+        float: none; }
+      /* line 719, ../sass/main.scss */
+      #sideBar #blogfeed img {
+        margin: .5em 0 0 0;
+        padding: 0 0 0 .5em;
+        float: right;
+        width: 35%;
+        margin-bottom: 1em; }
+
+  /* line 732, ../sass/main.scss */
+  .hspacerMain {
+    visibility: hidden;
+    min-height: 1em;
+    margin: 1em 0;
+    padding: 0;
+    border-bottom: 1px solid #cccccc; }
+
+  /* line 739, ../sass/main.scss */
+  .hspacerSide {
+    visibility: hidden;
+    min-height: 3em;
+    margin: 1em 0;
+    padding: 0; }
+
+  /* line 745, ../sass/main.scss */
+  #mainContent {
+    width: 100%; } }
+@media only screen and (max-width: 37.5em) and (min-width: 23.5em) {
+  /* This is a crazy but successful solution for centering the horizontal nav in tablet-mode only, using only CSS */
+  /* line 755, ../sass/main.scss */
+  nav {
+    width: 100%;
+    font-size: .9em;
+    float: left;
+    overflow: hidden;
+    position: relative; }
+    /* line 758, ../sass/main.scss */
+    nav ul {
+      float: left;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      left: 50%;
+      text-align: center; }
+      /* line 766, ../sass/main.scss */
+      nav ul li {
+        display: inline;
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 50%;
+        border-left: 1px #cccccc solid; }
+        /* line 775, ../sass/main.scss */
+        nav ul li a {
+          text-align: center;
+          padding: .8em;
+          margin: 0 .3em 0 .3em; }
+
+  /* line 787, ../sass/main.scss */
+  a.menu-link, #bigSlider {
+    display: none; }
+
+  /* line 791, ../sass/main.scss */
+  #smallSlider {
+    display: block; } }
+@media only screen and (max-width: 37.5em) {
+  /* line 798, ../sass/main.scss */
+  a.menu-link, #bigSlider {
+    display: none; }
+
+  /* line 801, ../sass/main.scss */
+  #smallSlider {
+    display: block; }
+
+  /* line 805, ../sass/main.scss */
+  #wrapper {
+    width: 37.5em;
+    max-width: 90%;
+    margin-top: 1em; }
+
+  /* line 810, ../sass/main.scss */
+  #mainContent {
+    width: 100%;
+    margin-top: 1em; }
+
+  /* line 815, ../sass/main.scss */
+  section .flexslider {
+    margin: 1.5em auto 2.5em auto;
+    min-width: 19em;
+    max-width: 49em; }
+
+  /* line 821, ../sass/main.scss */
+  header {
+    min-height: 7em; }
+    /* line 823, ../sass/main.scss */
+    header .logo {
+      clear: left;
+      float: none;
+      margin: 0px auto;
+      padding-top: 2em;
+      padding-bottom: .6em; }
+
+  /* line 832, ../sass/main.scss */
+  h1 {
+    font-size: 1.5em;
+    line-height: 1.4em; }
+
+  /* line 837, ../sass/main.scss */
+  h2 {
+    font-size: 1.3em;
+    line-height: 1.2em; }
+
+  /* line 842, ../sass/main.scss */
+  #sideBar {
+    float: none;
+    clear: both;
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 1em 1em 2em 1em; } }
+@media only screen and (max-width: 23.5em) {
+  /* Style adjustments for viewports that meet the condition */
+  /* SHRINK SOCIAL ICONS*/
+  /* line 857, ../sass/main.scss */
+  body {
+    min-width: 310px; }
+
+  /* line 861, ../sass/main.scss */
+  #wrapper {
+    width: 23.5em;
+    max-width: 90%;
+    margin: 3.5em 0 0 1em; }
+
+  /* line 867, ../sass/main.scss */
+  section .flexslider {
+    margin: 1em 0 2em 0;
+    min-width: 18em;
+    max-width: 18em; }
+
+  /* line 873, ../sass/main.scss */
+  #mainContent {
+    margin-top: .2em;
+    min-width: 23.5em -1em; }
+    /* line 876, ../sass/main.scss */
+    #mainContent h2 {
+      font-size: 1.1em;
+      line-height: 1.2em; }
+
+  /* line 881, ../sass/main.scss */
+  a.menu-link {
+    float: right;
+    display: block;
+    position: fixed;
+    z-index: 500;
+    top: .6em;
+    right: 1em;
+    padding: 0;
+    border: none; }
+
+  /* line 892, ../sass/main.scss */
+  a:hover.menu-link {
+    border: none; }
+
+  /* line 897, ../sass/main.scss */
+  header {
+    min-height: 3em; }
+    /* line 899, ../sass/main.scss */
+    header .logo {
+      clear: left;
+      float: none;
+      margin: 0px auto;
+      padding-top: 2em;
+      padding-bottom: .6em; }
+
+  /* line 908, ../sass/main.scss */
+  nav {
+    width: 100%;
+    font-size: 1em;
+    margin: 0px auto;
+    position: fixed;
+    z-index: 500;
+    top: 2.55em;
+    right: 0;
+    clear: both;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out; }
+    /* line 922, ../sass/main.scss */
+    nav ul {
+      float: none;
+      border-top: 1px solid #cccccc; }
+      /* line 925, ../sass/main.scss */
+      nav ul li {
+        border-right: 1px #cccccc solid;
+        display: block;
+        background-color: #FFC;
+        -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.6);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.6); }
+        /* line 930, ../sass/main.scss */
+        nav ul li a {
+          height: 3em;
+          display: block;
+          padding: 0;
+          margin: 0;
+          border-bottom: 1px solid #cccccc; }
+      /* line 938, ../sass/main.scss */
+      nav ul li:first-child {
+        border-left: 1px #cccccc solid;
+        border-right: 1px #cccccc solid; }
+
+  /* line 947, ../sass/main.scss */
+  .js nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0; }
+
+  /* line 951, ../sass/main.scss */
+  nav[role=navigation].active {
+    max-height: 16em; }
+
+  /* line 955, ../sass/main.scss */
+  #sideBar {
+    float: none;
+    clear: both;
+    border: none;
+    position: relative;
+    width: 100%; }
+    /* line 962, ../sass/main.scss */
+    #sideBar #blogfeed img {
+      margin-top: .5em;
+      clear: both;
+      float: right;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 1em; }
+    /* line 970, ../sass/main.scss */
+    #sideBar #blogfeed li {
+      margin-bottom: 1em; }
+    /* line 974, ../sass/main.scss */
+    #sideBar #blogfeed h3 {
+      font-size: 1em;
+      line-height: 1.2em;
+      margin-bottom: .4em; }
+      /* line 978, ../sass/main.scss */
+      #sideBar #blogfeed h3 a {
+        font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+        color: #663333;
+        text-decoration: none; }
+
+  /* line 987, ../sass/main.scss */
+  .hspacerSide {
+    visibility: hidden;
+    min-height: 0;
+    margin: 0;
+    padding: 0; }
+
+  /* line 995, ../sass/main.scss */
+  footer {
+    top: 0px;
+    height: 2.5em; }
+    /* line 998, ../sass/main.scss */
+    footer #social {
+      min-width: 15em;
+      float: left;
+      letter-spacing: -0.03em;
+      padding: .5em 0em 0em .2em; }
+      /* line 1003, ../sass/main.scss */
+      footer #social a {
+        text-align: center;
+        color: #000;
+        font-size: .7em;
+        padding: .5em .3em .4em .8em;
+        margin-right: .1em;
+        width: 25%;
+        background-position: 5% 50%;
+        background-repeat: no-repeat; }
+        /* line 1012, ../sass/main.scss */
+        footer #social a.linkedin {
+          background-image: none; }
+        /* line 1015, ../sass/main.scss */
+        footer #social a.facebook {
+          background-image: none; }
+        /* line 1018, ../sass/main.scss */
+        footer #social a.twitter {
+          background-image: none; }
+        /* line 1021, ../sass/main.scss */
+        footer #social a.resume {
+          background-image: none; }
+      /* line 1025, ../sass/main.scss */
+      footer #social a:hover {
+        background-color: none; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+  /* Style adjustments for high resolution devices */ }
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+/* Browser Resets */
+/* line 1057, ../sass/main.scss */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus {
+  outline: none; }
+
+/* line 1060, ../sass/main.scss */
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+/* FlexSlider Necessary Styles
+*********************************/
+/* line 1064, ../sass/main.scss */
+.flexslider {
+  margin: 0;
+  padding: 0; }
+
+/* line 1065, ../sass/main.scss */
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden; }
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+/* line 1066, ../sass/main.scss */
+.flexslider .slides img {
+  width: 100%;
+  display: block; }
+
+/* line 1067, ../sass/main.scss */
+.flex-pauseplay span {
+  text-transform: capitalize; }
+
+/* Clearfix for the .slides element */
+/* line 1070, ../sass/main.scss */
+.slides:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* line 1071, ../sass/main.scss */
+html[xmlns] .slides {
+  display: block; }
+
+/* line 1072, ../sass/main.scss */
+* html .slides {
+  height: 1%; }
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+/* line 1077, ../sass/main.scss */
+.no-js .slides > li:first-child {
+  display: block; }
+
+/* FlexSlider Default Theme
+*********************************/
+/* line 1082, ../sass/main.scss */
+.flexslider {
+  margin: 0 0 60px;
+  background: #fff;
+  border: 4px solid #fff;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  zoom: 1; }
+
+/* line 1083, ../sass/main.scss */
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  transition: all 1s ease; }
+
+/* line 1084, ../sass/main.scss */
+.loading .flex-viewport {
+  max-height: 300px; }
+
+/* line 1085, ../sass/main.scss */
+.flexslider .slides {
+  zoom: 1; }
+
+/* line 1087, ../sass/main.scss */
+.carousel li {
+  margin-right: 5px; }
+
+/* Direction Nav */
+/* line 1091, ../sass/main.scss */
+.flex-direction-nav {
+  *height: 0; }
+
+/* line 1092, ../sass/main.scss */
+.flex-direction-nav a {
+  width: 30px;
+  height: 30px;
+  margin: -20px 0 0;
+  display: block;
+  background: url(images/bg_direction_nav.png) no-repeat 0 0;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  text-indent: -9999px;
+  opacity: 0;
+  -webkit-transition: all .3s ease; }
+
+/* line 1093, ../sass/main.scss */
+.flex-direction-nav .flex-next {
+  background-position: 100% 0;
+  right: -36px; }
+
+/* line 1094, ../sass/main.scss */
+.flex-direction-nav .flex-prev {
+  left: -36px; }
+
+/* line 1095, ../sass/main.scss */
+.flexslider:hover .flex-next {
+  opacity: 0.8;
+  right: 5px; }
+
+/* line 1096, ../sass/main.scss */
+.flexslider:hover .flex-prev {
+  opacity: 0.8;
+  left: 5px; }
+
+/* line 1097, ../sass/main.scss */
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {
+  opacity: 1; }
+
+/* line 1098, ../sass/main.scss */
+.flex-direction-nav .flex-disabled {
+  opacity: .3!important;
+  filter: alpha(opacity=30);
+  cursor: default; }
+
+/* Control Nav */
+/* line 1101, ../sass/main.scss */
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center; }
+
+/* line 1102, ../sass/main.scss */
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+/* line 1103, ../sass/main.scss */
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3); }
+
+/* line 1104, ../sass/main.scss */
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7); }
+
+/* line 1105, ../sass/main.scss */
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default; }
+
+/* line 1107, ../sass/main.scss */
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden; }
+
+/* line 1108, ../sass/main.scss */
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0; }
+
+/* line 1109, ../sass/main.scss */
+.flex-control-thumbs img {
+  width: 100%;
+  display: block;
+  opacity: .7;
+  cursor: pointer; }
+
+/* line 1110, ../sass/main.scss */
+.flex-control-thumbs img:hover {
+  opacity: 1; }
+
+/* line 1111, ../sass/main.scss */
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default; }
+
+@media screen and (max-width: 860px) {
+  /* line 1114, ../sass/main.scss */
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 0; }
+
+  /* line 1115, ../sass/main.scss */
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 0; } }
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  /* line 1126, ../sass/main.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 1134, ../sass/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 1138, ../sass/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 1142, ../sass/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 1152, ../sass/main.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 1157, ../sass/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 1162, ../sass/main.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 1167, ../sass/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 1171, ../sass/main.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+
+  /* line 1181, ../sass/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 1187, ../sass/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; }
+
+  /* line 1191, ../sass/main.scss */
+  p {
+    page-break-after: auto; }
+
+  /* line 1193, ../sass/main.scss */
+  a.menu-link {
+    display: none; }
+
+  /* line 1196, ../sass/main.scss */
+  nav {
+    display: none; }
+
+  /* line 1199, ../sass/main.scss */
+  #wrapper {
+    width: 650px; }
+
+  /* line 1202, ../sass/main.scss */
+  #mainContent {
+    width: 98%; }
+
+  /* line 1206, ../sass/main.scss */
+  #sideBar {
+    float: none;
+    clear: both;
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border: none;
+    padding: none; } }

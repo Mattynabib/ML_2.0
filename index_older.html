@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> -->
+<link rel="shortcut icon" href="favicon.ico" TYPE="image/x-icon" />
+<link rel="icon" href="favicon.ico" TYPE="image/x-icon" />
+<title>ML RWD Test 3</title>
+<meta name="description" content="My first attempt (sort of) at a simple responsive site test" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory --> 
+
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link href='http://fonts.googleapis.com/css?family=Signika+Negative|Ubuntu|Hammersmith+One|Cardo' rel='stylesheet' type='text/css'>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main-ck.js"></script>
+
+<script src="hammer.js"></script>
+<script src="jquery.hammer.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+
+$menulink.click(function() {
+  $menulink.toggleClass('active');
+  $menu.toggleClass('active');
+  $("#mainContent").toggleClass('pushDown');
+  return false;
+});
+if ($("#wrapper").width() > 301) {
+	$("#mainContent").removeClass('pushDown');
+	$menulink.removeClass('active');
+  	$menu.removeClass('active');
+}
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+		animation: "slide",
+		animationSpeed: 500,
+		slideshowSpeed: 7000, 
+		slideshow: true
+	});
+  });
+</script>
+
+<script>
+	$('.slides').addClass('js');
+</script>
+
+</head>
+
+<body id="homePage">
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]--> 
+
+<!-- Add your site or application content here -->
+<div id="outer">
+<div id="wrapper">
+  <header>
+    <div class="logo">mattlaurence</div>
+    <a href="#menu" class="menu-link"><img src="img/menu_icon.png" /></a>
+    <nav id="menu" role="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Music</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="backToTop">BACK TO TOP</div>
+  <section id="mainContent">
+    <h2>Welcome! I'm Matt Laurence, a Senior UX Designer, musician, video guy, roustabout and rogue. Come on in, have a look around.</h2>
+    <div class="smallFrame">
+    <section class="flexslider">
+      <ul class="slides"> 
+          <li><img src="img/case_ADHD.jpg" /></li> 
+          <li><img src="img/case2img.jpg" /></li> 
+          <li><img src="img/case3img.jpg" /></li> 
+          <li><img src="img/case4img.jpg" /></li> 
+          <li><img src="img/case5img.jpg" /></li> 
+      </ul>
+    </section>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a adipiscing orci. Proin tincidunt arcu suscipit nisi blandit vitae rhoncus tortor vestibulum. Cras vel metus vel diam iaculis lobortis. Integer sed felis nec nibh semper adipiscing quis sed libero. Duis ac nunc in tellus scelerisque sagittis. <a href="http://www.google.com/">Nunc non dolor nisi</a>. Suspendisse laoreet lacus id nibh consectetur non lacinia erat euismod. Quisque ut accumsan lacus. In metus ipsum, accumsan vel convallis non, aliquam eget diam. Nulla facilisi.</p>
+    <br>
+    <br />
+    <br />
+  </section>
+  <section id="sideBar">
+    <h2>Sidebar here</h2>
+    <p>Interesting sidebar content can go here:</p>
+    <item>
+  </section>
+</div>
+</div>
+<footer>
+  <div id="social">
+    <ul>
+      <li><a href='http://www.linkedin.com/in/mattlaurence' class='linkedin'>LinkedIn</a></li>
+      <li><a href='https://twitter.com/Mattynabib' class='twitter'>Twitter</a></li>
+      <li><a href='http://www.facebook.com/mattynabib' class='facebook'>Facebook</a></li>
+      <li><a href='goodies/ML_resume_041612.pdf' class='resume'>Resume</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+
+</body>
+</html>

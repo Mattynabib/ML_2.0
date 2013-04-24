@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<outer>
+
+	<item>
+		<itemTitle>Case Study 1</itemTitle>
+		<itemImage>case1img.jpg</itemImage>
+		<itemDescription>This is the first awesome case study in my portfolio!</itemDescription>
+		<itemLink>caseStudy1.html</itemLink>
+	</item>
+	
+	<item>
+		<itemTitle>Case Study 2</itemTitle>
+		<itemImage>case2img.jpg</itemImage>
+		<itemDescription>Second case study goes here</itemDescription>
+		<itemLink>caseStudy2.html</itemLink>
+	</item>
+	
+	<item>
+		<itemTitle>Case Study 3</itemTitle>
+		<itemImage>case3img.jpg</itemImage>
+		<itemDescription>How about a third one?</itemDescription>
+		<itemLink>caseStudy3.html</itemLink>
+	</item>
+
+	<item>
+		<itemTitle>Case Study 4</itemTitle>
+		<itemImage>case4img.jpg</itemImage>
+		<itemDescription>Fourth case study is probably the very best one</itemDescription>
+		<itemLink>caseStudy4.html</itemLink>
+	</item>
+		
+	<item>
+		<itemTitle>Case Study 5</itemTitle>
+		<itemImage>case5img.jpg</itemImage>
+		<itemDescription>This is the fifth and final case study (for now), with more text than any other one</itemDescription>
+		<itemLink>caseStudy5.html</itemLink>
+	</item>
+	
+</outer>

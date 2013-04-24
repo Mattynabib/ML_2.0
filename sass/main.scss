@@ -1,0 +1,1216 @@
+/*
+ * HTML5 Boilerplate SASS? ML
+ *
+ * THIS IS MY ATTEMPT AT A SASS VERSION 
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+   
+   
+/* ==========================================================================
+   
+   NOTES:
+   UPDATED: 09-28-12
+   
+   Things to add/try/fix:
+   
+   - Figure out how to conditionally load the proper slider
+   - Keep of remove image in blog sidebar mode?
+      
+   
+========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	text-rendering: optimizeLegibility;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+/*
+font-family: 'Signika Negative', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Cardo', serif;
+*/
+
+/* ====================================================================================================================
+   Author's custom variables
+   ==================================================================================================================== */
+
+$defaultWidth: 68.75em;
+$smallDeskWidth: 48em;
+$tabletWidth: 37.5em;
+$phoneWidth: 23.5em;
+
+$pageColor: #FFF;
+$navColor: #FC0;
+$socialColor: #FFF;
+$footerColor: #CCC;
+
+$borderColors: #CCC;
+$linkColors: #633;
+
+$genRadius: 0.3em;
+$numSocialItems: 4;
+$numNavItems: 5;
+
+$pushDownVal: $numNavItems * 3.2em;
+
+
+
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+	color: #000;
+	font-family: "Cardo", "Times", serif;
+}
+
+a {
+	font-family: "Cardo", "Times", serif;
+	color: $linkColors;
+	border: none;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.hspacerMain {
+	visibility: hidden;
+    min-height: 3em;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.hspacerSide {
+	visibility: hidden;
+    min-height: 1em;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ====================================================================================================================
+   MIXINS
+   ==================================================================================================================== */
+   
+   
+@mixin rounded() {
+  -webkit-border-radius: $genRadius;
+  -moz-border-radius: $genRadius;
+  border-radius: $genRadius;
+}
+
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $spread $color;
+    -moz-box-shadow:inset $top $left $blur $spread $color;
+    box-shadow:inset $top $left $blur $spread $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $spread $color;
+    -moz-box-shadow: $top $left $blur $spread $color;
+    box-shadow: $top $left $blur $spread $color;
+  }
+}
+
+	
+
+section .flexslider {
+	position: relative;
+	margin: 1.5em auto 3em auto;
+	min-width: 19em;
+	max-width: 49em;
+}
+
+
+/* ====================================================================================================================
+   Author's custom styles
+   ==================================================================================================================== */
+
+body {
+	background-color: $pageColor;
+}
+
+
+#wrapper {
+	background-color: $pageColor;	
+	display:block;
+	width: $defaultWidth;
+	max-width:90%;
+	margin: 1em auto 0 auto;
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	display: block;
+	width: 100%;
+	height: 4em;
+	margin: .6em 0;
+}
+
+h1 {
+	color: #333;
+	font-family: "Hammersmith One", "Gotham", "Helvetica", sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 2em;
+}
+
+h2 {
+	color: #333;
+	font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+	font-size: 1.5em;
+/*	font-weight: bold;
+*/	line-height: 1.3em;
+}
+
+p {
+	margin: 0 0 1.1em 0;
+}
+	
+nav {
+	position: static;
+	line-height:3em;
+	ul {
+		float:right;
+
+	}
+	li {
+		display: inline;
+		border-left: 1px $borderColors solid;
+		
+		a {
+			font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+			text-align: center;
+			padding: .2em .8em;
+			margin: 0 0 0 .3em;
+			color: $linkColors;
+		}
+		a.activeLink {
+			background-color:$navColor;
+		}
+		a:hover {
+			background-color:$navColor;
+			text-decoration:none;
+		}
+	}
+	li:first-child {
+			border: none;
+		}
+}
+
+.logo {
+	display: block;
+	float: left;	
+	background-image:url(../img/logo1.jpg);
+	background-repeat: no-repeat;
+	text-decoration: none;
+	font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+	font-size: 1.1em;
+	text-align: center;
+	padding-top: 2em;
+	width: 6em;
+}
+
+#backToTop {
+	visibility: hidden;
+	position: absolute;
+}
+		
+#mainContent {
+	background-color: $pageColor;
+	display: block;
+	float: left;
+	padding: 0;
+	margin-top: 10.5em;
+	width:68%; 
+}
+	
+
+#sideBar {
+	display: block;
+	min-height: 200px;
+	h2 {
+		font-size: 1.2em;
+		line-height: 1.2em;
+		margin-bottom: .4em;
+	} 
+	p {
+		font-size: .8em;
+		line-height: 1.2em;
+	}
+	float: right;
+	border-left: 1px $borderColors solid;
+	padding: 0em 1em;
+	margin-top: 1.5em;
+	width: 28%; 
+	
+	.feedThumb {
+		float: left;	
+		margin-right: .5em;
+	}
+	
+	#twitter_div {
+		a {
+			font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+			color: $linkColors;
+			font-size: .7em;
+			text-decoration:none;
+		}
+		ul li {
+			font-family: "Cardo", "Times", serif;
+			font-size: .7em;
+			line-height: 1.3em;
+			a {
+				font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+				color: $linkColors;
+				text-decoration:none;
+			}
+			margin-bottom: 1em;
+			.theTweet {
+				color: #000;
+				font-family: "Cardo", "Times", serif;
+				font-size: 1em;
+				line-height: 1.3em;
+
+			}
+		}
+	}
+
+	#blogfeed {
+		a {
+			font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+			color: $linkColors;
+			text-decoration:none;
+		}
+		h3 {
+			font-size: .8em;
+			line-height: 1.1em;
+			margin-bottom: .4em;
+		}
+		p {
+			font-family: "Cardo", "Times", serif;
+			font-size: .7em;
+			line-height: 1.2em;
+			margin-bottom: 1.2em;
+		}
+		span {
+			font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+			font-size: .6em;
+			float: right;
+		}
+		img {
+			margin-top: .5em;
+			clear: both;
+			float: none;
+			width: 100%;
+			margin-bottom: 1em;
+		}
+		border-bottom: 1px solid $borderColors;
+		margin-bottom: 1em;
+	}
+
+}
+ 
+footer {
+	background-color:$footerColor;
+	@include box-shadow(0px, 0px, 6px, 0px, rgba(0, 0, 0, 0.8));
+	position:fixed;
+	bottom: 0px;
+	height: 2.5em;
+	width: 100%;
+	
+	#social {
+		min-width: 18em;
+		float: right;
+		position: relative;
+		padding:.6em 0em 1em 0em;
+	li {
+		display: inline;
+	}
+	a {
+		font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+		text-align: center;
+		color: #000;
+		font-size: .7em;
+		padding:.5em .3em .4em 2.2em;
+		margin-right: .1em;
+		width: 100% / $numSocialItems ;
+		background-position: 5% 50%; 
+		background-repeat: no-repeat;
+		&.linkedin {
+			background-image:url(../img/linkedInIcon1.png);
+		}
+		&.facebook {
+			background-image:url(../img/facebookIcon1.png);
+		}
+		&.twitter {
+			background-image:url(../img/twitterIcon1.png);
+		}
+		&.resume {
+			background-image:url(../img/resumeIcon1.png);
+		}
+	}
+	a:hover {
+		background-color: mix($footerColor, black, 85%);
+		text-decoration:none;
+	}
+
+}
+}
+
+ 
+#mainColumn {
+	width: 96%;	
+	margin: 0em 1em;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+  								MEDIA QUERIES  
+   ========================================================================== */
+
+
+@media only screen and (min-width: $tabletWidth) {
+	/* =========== THIS STUFF IS FOR STYLES THAT SHOULD SHOW UP *ONLY* ON LARGER LAYOUTS =========== */
+
+	a.menu-link, #smallSlider {
+		display: none;
+	}
+	
+	#bigSlider {
+		display: block;
+	}
+	
+	.js nav[role=navigation] {
+		max-height: none;
+	}
+}
+
+@media only screen and (max-width: $defaultWidth) {
+	#wrapper {
+		width: $defaultWidth;
+		max-width:90%;
+	}
+}
+
+@media only screen and (max-width: $smallDeskWidth) {
+	#wrapper {
+		width: $smallDeskWidth;
+		max-width:90%;
+	}
+	nav {
+		position: static;
+		bottom: 0px;
+		width: auto; 
+	}
+	#sideBar  {
+		-webkit-transition: all 0.3s ease-out;  
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+
+		float:none;
+		clear:both;	
+		width: 100%; 
+		padding: 1em;
+		min-height: 100px;
+		position: static;
+		border: none;
+		background-color: #DDD;
+		
+		#twitter_div {
+/*			a {
+				font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+				color: $linkColors;
+				font-size: 1em;
+				text-decoration:none;
+			}
+*/			ul li {
+				font-family: "Cardo", "Times", serif;
+				font-size: 1em;
+				line-height: 1.1em;
+				a {
+					font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+					color: $linkColors;
+					text-decoration:none;
+					:hover {
+					background-color: #ffc;
+				}
+				}
+				margin-bottom: 1em;
+				.theTweet {
+					color: #000;
+					font-family: "Cardo", "Times", serif;
+					font-size: 1em;
+					line-height: 1.3em;
+				}
+			}
+		#twitter-link {
+				display: block;
+				text-align: right;
+			}
+		}
+		#blogfeed {
+			li {
+				margin-bottom: 2em;
+			}
+			h3 {
+				font-size: 1em;
+				line-height: 1.3em;
+				margin-bottom: .4em;
+				:hover {
+					background-color: #ffc;
+				}
+				a {
+					font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+					color: $linkColors;
+					text-decoration:none;
+				}
+			}
+			p {
+				font-family: "Cardo", "Times", serif;
+				font-size: .9em;
+				line-height: 1.2em;
+				margin-bottom: 1.5em;
+			}
+			span {
+				font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+				font-size: .8em;
+				float: none;
+			}
+			img {
+				margin: .5em 0 0 0;
+				padding: 0 0 0 .5em;
+				float: right;
+				width:35%;
+				margin-bottom: 1em;
+		}
+			border-bottom: 1px solid $borderColors;
+			margin-bottom: 1em;
+		}
+
+		
+	}
+	.hspacerMain {
+		visibility: hidden;
+		min-height: 1em;
+		margin: 1em 0;
+		padding: 0;
+		border-bottom: 1px solid $borderColors;
+	}
+	.hspacerSide {
+		visibility: hidden;
+		min-height: 3em;
+		margin: 1em 0;
+		padding: 0;
+	}
+	#mainContent {
+		width: 100%;
+	}
+	
+}
+
+@media only screen and (max-width: $tabletWidth) and (min-width: $phoneWidth){
+	
+/* This is a crazy but successful solution for centering the horizontal nav in tablet-mode only, using only CSS */
+
+	nav {
+		width: 100%;
+		font-size: .9em;
+		ul {
+			float:left;	
+			list-style:none;
+			margin:0;
+			padding:0;
+			position:relative;
+			left:50%;
+			text-align:center;
+			li {
+				display: inline;
+				float:left;
+				list-style:none;
+				margin:0;
+				padding:0;
+				position:relative;
+				right:50%;
+				border-left: 1px $borderColors solid;
+				a {
+					text-align: center;
+					padding: .8em;
+					margin: 0 .3em 0 .3em;
+				}
+			}
+		}
+		float: left;
+		overflow:hidden;
+		position:relative;
+	}
+	
+	a.menu-link, #bigSlider  {
+		display: none;
+	}
+	
+	#smallSlider {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: $tabletWidth){
+		
+	a.menu-link, #bigSlider {
+		display: none;
+	}
+	#smallSlider {
+		display:block;
+	}
+	
+	#wrapper {
+		width: $tabletWidth;
+		max-width:90%;
+		margin-top: 1em;
+	}
+	#mainContent {
+		width: 100%;
+		margin-top: 1em;
+	}
+
+	section .flexslider {
+	margin: 1.5em auto 2.5em auto;
+	min-width: 19em;
+	max-width: 49em;
+	}
+	
+	header {
+		min-height: 7em;
+		.logo {
+			clear: left;
+			float: none;	
+			margin: 0px auto;
+			padding-top: 2em;
+			padding-bottom: .6em;
+		}
+	}
+	
+	h1 {
+	 font-size: 1.5em;
+	 line-height: 1.4em;
+	}
+	
+	h2 {
+		 font-size: 1.3em;
+		 line-height: 1.2em;
+	}
+	
+	#sideBar  {
+		float:none;
+		clear:both;	
+		position: relative;	
+		width: 100%; 
+		border: none;
+		padding: 1em 1em 2em 1em;
+	}
+	}
+
+@media only screen and (max-width: $phoneWidth) {
+    /* Style adjustments for viewports that meet the condition */
+
+/* SHRINK SOCIAL ICONS*/
+
+	body {
+		min-width: 310px;
+	}
+	
+	#wrapper {
+		width: $phoneWidth;
+		max-width:90%;
+		margin: 3.5em 0 0 1em;
+	}
+	
+	section .flexslider {
+		margin: 1em 0 2em 0;
+		min-width: 18em;
+		max-width: 18em;
+	}
+	
+	#mainContent {
+		margin-top: .2em;
+		min-width: $phoneWidth -1em;
+	    h2 {
+		 font-size: 1.1em;
+		 line-height: 1.2em;
+		}
+	}
+	a.menu-link {
+	  float: right;
+	  display: block;
+	  position: fixed;
+	  z-index:500;
+	  top: .6em;
+	  right: 1em;
+	  padding: 0;
+	  border: none;
+	}
+	
+	a:hover.menu-link {
+		border: none;
+	}
+	
+
+	header {
+		min-height: 3em;
+		.logo {
+			clear: left;
+			float: none;	
+			margin: 0px auto;
+			padding-top: 2em;
+			padding-bottom: .6em;
+		}
+	}
+	
+	nav {
+		width: 100%;
+		font-size: 1em;
+		margin: 0px auto;
+		position: fixed;
+		z-index:500;
+		top: 2.55em;
+		right:0;
+		clear: both;
+		-webkit-transition: all 0.3s ease-out;  
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+		ul {
+			float:none;	
+			border-top: 1px solid $borderColors;
+			li {
+				border-right: 1px $borderColors solid;
+				display: block;
+				background-color: #FFC;
+				@include box-shadow(0px, 2px, 4px, 0px, rgba(0, 0, 0, 0.6));
+				a {
+					height: 3em;
+					display: block;
+					padding: 0;
+					margin: 0;
+					border-bottom: 1px solid $borderColors;
+				}
+			}
+			li:first-child {
+				border-left: 1px $borderColors solid;
+				border-right: 1px $borderColors solid;
+			}
+			
+		}
+	}
+
+
+	.js nav[role=navigation] {
+	  overflow: hidden;
+	  max-height: 0;
+	}
+	nav[role=navigation].active {
+		max-height: $pushDownVal;
+	}
+	
+	#sideBar  {
+		float:none;
+		clear:both;
+		border: none;
+		position: relative;	
+		width: 100%; 
+		#blogfeed {
+			img {
+				margin-top: .5em;
+				clear: both;
+				float: right;
+				width: 100%;
+				padding: 0;
+				margin-bottom: 1em;
+			}
+			li {
+				margin-bottom: 1em;
+			}
+			
+			h3 {
+				font-size: 1em;
+				line-height: 1.2em;
+				margin-bottom: .4em;
+				a {
+					font-family: "Signika Negative", "Gotham", "Helvetica", sans-serif;
+					color: $linkColors;
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+	.hspacerSide {
+		visibility: hidden;
+		min-height: 0;
+		margin: 0;
+		padding: 0;
+	}
+
+	
+	footer {
+		top: 0px;
+		height: 2.5em;
+		#social {
+			min-width: 15em;
+			float: left;
+			letter-spacing: -.03em;
+			padding: .5em 0em 0em .2em;
+			a {
+			  text-align: center;
+			  color: #000;
+			  font-size: .7em;
+			  padding:.5em .3em .4em .8em;
+			  margin-right: .1em;
+			  width: 100% / $numSocialItems ;
+			  background-position: 5% 50%; 
+			  background-repeat: no-repeat;
+			  &.linkedin {
+				  background-image: none;
+			  	}
+			  &.facebook {
+				  background-image:none;
+			  	}
+			  &.twitter {
+				  background-image:none;
+			  	}
+			  &.resume {
+				  background-image:none;
+			  	}
+		  	}
+			a:hover {
+				  background-color:none;
+			  }
+		}
+	}
+
+}
+
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/*
+ * jQuery FlexSlider v2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ */
+
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active,
+.flex-container a:focus,
+.flexslider a:focus  {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {margin: 0; padding: 0;}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {width: 100%; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {margin: 0 0 60px; background: #fff; border: 4px solid #fff; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1;}
+.flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height: 300px;}
+.flexslider .slides {zoom: 1;}
+
+.carousel li {margin-right: 5px}
+
+
+/* Direction Nav */
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -40px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+  .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+	
+	p {page-break-after:auto}
+	
+	a.menu-link {
+		display:none;
+	}
+	nav {
+		display:none;
+	}
+	#wrapper {
+		width: 650px;
+	}
+		#mainContent {
+		width: 98%;
+	}
+
+		#sideBar  {
+		float:none;
+		clear:both;	
+		position: relative;	
+		width: 100%; 
+		min-height: 100px;
+		border: none;
+		padding: none;
+	}
+
+}

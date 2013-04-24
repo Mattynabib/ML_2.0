@@ -1,0 +1,162 @@
+
+.matt_body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000
+}
+
+.matt_sub {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000
+}
+
+.matt_sub2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #0000CC
+}
+
+.matt_menuOver {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #CC0000
+}
+
+.matt_bold {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000
+}
+
+.matt_boldul {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: underline
+}
+
+.matt_bolditalic {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: normal;
+	text-transform: none;
+	color: #000000;
+	text-decoration: none
+}
+
+.matt_footer {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #333333;
+	text-decoration: none
+}
+
+A:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #0000CC;
+	text-decoration: none
+}
+
+A:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #CC00CC;
+	text-decoration: none
+}
+
+A:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	color: #CC0000;
+	text-decoration: underline
+}
+
+.theBanner {
+ @import url(http://fonts.googleapis.com/css?family=Oswald:400);
+	font-size: 1em;
+	font-family: 'Oswald', 'Helvetica Neue', Helvetica;
+	color: #333;
+	background: #fccd4d; /* Old browsers */
+	background: -moz-linear-gradient(top, #fccd4d 0%, #fbdf93 51%, #fbdf93 60%, #f7c64c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fccd4d), color-stop(51%, #fbdf93), color-stop(60%, #fbdf93), color-stop(100%, #f7c64c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fccd4d 0%, #fbdf93 51%, #fbdf93 60%, #f7c64c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fccd4d 0%, #fbdf93 51%, #fbdf93 60%, #f7c64c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fccd4d 0%, #fbdf93 51%, #fbdf93 60%, #f7c64c 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #fccd4d 0%, #fbdf93 51%, #fbdf93 60%, #f7c64c 100%); /* W3C */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fccd4d', endColorstr='#f7c64c', GradientType=0 ); /* IE6-9 */
+	line-height: 1.4;
+	position: fixed;
+	z-index: 100;
+	top: 3em;
+	left: -5em;
+	margin: 1em auto;
+	width: 23em;
+	height:1.5em;
+	box-shadow: .5em .5em.5em rgba(0,0,0,0.15);
+	border: 1px solid #fc0;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1em;
+	line-height: 1.6em;
+ -webkit-transform: rotate(-.1turn);
+ -moz-transform: rotate(-.1turn);
+ -o-transform: rotate(-.1turn);
+ -ms-transform: rotate(-.1turn);
+ transform: rotate(-.1turng);
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> -->
+<link rel="shortcut icon" href="favicon.ico" TYPE="image/x-icon" />
+<link rel="icon" href="favicon.ico" TYPE="image/x-icon" />
+<title>ML RWD Test 3</title>
+<meta name="description" content="My first attempt (sort of) at a simple responsive site test" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/main.css" />
+<link href='http://fonts.googleapis.com/css?family=Signika+Negative|Ubuntu|Hammersmith+One|Cardo' rel='stylesheet' type='text/css'>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+<script src="js/main-ck.js"></script>
+<script src="https://www.google.com/jsapi"/></script>
+
+<script>Modernizr.mq('(min-width:0)') || document.write("<script src='js/respond.min.js'>\x3C/script>")</script>
+
+<script>
+	google.load("feeds","1");
+	google.setOnLoadCallback(displayFeed);
+</script>
+
+<script>
+$(document).ready(function() {
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+
+$menulink.click(function() {
+  $menulink.toggleClass('active');
+  $menu.toggleClass('active');
+  $("#mainContent").toggleClass('pushDown');
+  return false;
+});
+if ($("#wrapper").width() > 301) {
+	$("#mainContent").removeClass('pushDown');
+	$menulink.removeClass('active');
+  	$menu.removeClass('active');
+}
+});
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+		animation: "slide",
+		animationSpeed: 500,
+		slideshowSpeed: 7000, 
+		slideshow: true
+	});
+  });
+</script>
+
+<script>
+	$('.slides').addClass('js');
+</script>
+<script src="js/vendor/modernizr-2.6.1.min.js"></script>
+</head>
+
+<body id="homePage">
+<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]--> 
+
+<!-- Add your site or application content here -->
+<div id="outer">
+  <div id="wrapper">
+    <header>
+      <div class="logo">mattlaurence</div>
+      <a href="#menu" class="menu-link"><img src="img/menu_icon.png" /></a>
+      <nav id="menu" role="navigation">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="http://www.mattlaurence.com/">Work</a></li>
+          <li><a href="music.shtml">Music</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <!--        <li><a href="#">Clients</a></li>
+-->
+        </ul>
+      </nav>
+    </header>
+    <div id="backToTop">BACK TO TOP</div>
+    <section id="mainContent">
+      <h2>Welcome! I'm Matt Laurence, a Senior UX Designer, musician, video guy, roustabout and rogue. Come on in, have a look around.</h2>
+      <section class="flexslider" id="bigSlider">
+        <ul class="slides">
+          <li><img src="img/case_ADHD.jpg" /></li>
+          <li><img src="img/case_EBE.jpg" /></li>
+          <li><img src="img/case_ESAI.jpg" /></li>
+          <li><img src="img/case_ValHCP.jpg" /></li>
+          <li><img src="img/case_ValSTT.jpg" /></li>
+        </ul>
+      </section>
+      <section class="flexslider" id="smallSlider">
+        <ul class="slides">
+          <li><img src="img/case_ADHDsm.jpg" /></li>
+          <li><img src="img/case_EBEsm.jpg" /></li>
+          <li><img src="img/case_ESAIsm.jpg" /></li>
+          <li><img src="img/case_ValHCPsm.jpg" /></li>
+          <li><img src="img/case_ValSTTsm.jpg" /></li>
+        </ul>
+      </section>
+      <p>My job has been to make life easier for hapless users and professionals alike since 1990. An utter passion for the geekiest of trends in technology and user experience have certainly not hurt.</p>
+      <p>When my career as <a href="http://www.northamptonma.gov/">technical writer</a> and instructional <a href="http://www.city.waltham.ma.us/">video producer</a> did not catch fire, I wound up in <a href="http://www.bbb.org/boston/business-reviews/magazines-distributors/mindcraft-publishing-corporation-in-lincoln-ma-38952/">publishing</a>, then through the Ad Club of Boston in <a href="http://www.mullen.com/">advertising,</a> then into both <a href="http://www.staples.com/">traditional and digital marketing</a>, and inevitably in what we now call <a href="http://www.weymouthdesign.com/">User Experience Design</a>. </p>
+      <p>For a decade I contracted doing web and Flash strategy, design, and coding work around the Boston area, in between tours with various rock bands. I finally dove head-first - and full-time - into the UX end of web application development (and very early mobile app development via tablet PCs) at Weymouth Design. </p> 
+      <p>From there I joined One To One Interactive and won several MITX awards as a Sr. Interactive Art Director. Since joining Inflexxion in 2010, I've focused on UX design and improving Inflexxion products, as well as building and heading up the Inflexxion creative media services department. I am currently enrolled in the Bentley MSHFID program to receive a Masters in Human Factors and Information Design, planning my escape by 2014. </p>
+       <div class="hspacerMain"></div>
+    </section>
+    <section id="sideBar">
+      <h2>The Grand Nabib Sez...</h2>
+      <div id="blogfeed">
+        <ul id="updates">
+        </ul>
+      </div>
+      <div id="twitter_div">
+        <h2>Tweet this...</h2>
+        <ul id="twitter_update_list">
+        </ul>
+        <a href="http://twitter.com/Mattynabib" id="twitter-link">follow me on Twitter</a> 
+        <script type="text/javascript" src="http://twitter.com/statuses/user_timeline/Mattynabib.json?callback=twitterCallback2&amp;count=3"></script> 
+      </div>
+      
+    </section>
+    <div class="hspacerSide"></div>
+  </div>
+</div>
+<footer>
+  <div id="social">
+    <ul>
+      <li><a href='http://www.linkedin.com/in/mattlaurence' class='linkedin'>LinkedIn</a></li>
+      <li><a href='https://twitter.com/Mattynabib' class='twitter'>Twitter</a></li>
+      <li><a href='http://www.facebook.com/mattynabib' class='facebook'>Facebook</a></li>
+      <li><a href='goodies/ML_resume_041612.pdf' class='resume'>Resume</a></li>
+    </ul>
+  </div>
+</footer>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --> 
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>

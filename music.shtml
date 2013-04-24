@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Ye Olde School Playere of Musicks</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="keywords" content="Matt, Matt Laurence, Laurence, Matthew Laurence, Matthew James Wilson Laurence, Gloucester, Massachusetts, musician, bass, bassist, mandolin, secret service, yeP!, band, music, wedding band, wedding musician, wedding, session musician, session bassist, Strong Trees, MaryHelen Gunn, concertina, web, web design, web development, flash, flash development, flash MX, macromedia, adobe, photoshop, retouching, photo retouching, digital photography, flash developer, web developer, internet developer, web designer, flash designer, html, javascript, actionscript, lingo, director, design, designer, art director, senior designer, shirt design, shirt designer, t-shirt, t-shirt design, production, web production, multimedia production, flash production, multimedia, multimedia developer, multimedia development, interactive, Phish, PhishNet, Phish Net, creator of the Phishnet, PhishNet creator, phishnet shirt">
+<meta name="description" content="Welcome to the Matt Laurence jukebox, a repository of many things sacred, profane and unusual from the musical history of Matt Laurence (and yes, I designed and built the Flash jukebox, based on a popular photograph of an old diner jukebox). I was in some way materially involved in all of these songs; many of them I wrote, all of them I performed on in some capacity, and maybe four of them have ever achieved any sort of radio play. But they are parts of my musical self, and I love them all for one reason or another. This will change and expand over time, so come back now and then to visit!">
+<link href="matt_styles.css" rel="stylesheet" type="text/css">
+<script language="JavaScript">
+
+<!--  HIDE JAVASCRIPT FROM NON-JAVASCRIPT CAPABLE BROWSERS
+
+// This function is for the rollovers
+
+function swapImage(daImage, daSrc){
+  var objStr,obj;
+
+  if(document.images){
+    // Check to see whether you are using a name, number, or object
+    if (typeof(daImage) == 'string') {
+      objStr = 'document.' + daImage;
+      obj = eval(objStr);
+      obj.src = daSrc;
+    } else if ((typeof(daImage) == 'object') && daImage && daImage.src) {
+      daImage.src = daSrc;
+    }
+  }
+}
+
+
+// Thanks to Webmonkey for the following preload code!
+
+function WM_preloadImages() {
+
+  if (document.images) {
+    if (typeof(document.WM) == 'undefined'){
+      document.WM = new Object();
+    }
+    document.WM.loadedImages = new Array();
+    var argLength = WM_preloadImages.arguments.length;
+    for(arg=0;arg<argLength;arg++) {
+      document.WM.loadedImages[arg] = new Image();
+      document.WM.loadedImages[arg].src = WM_preloadImages.arguments[arg];
+    }
+  }
+}
+
+	
+
+function openWin(URL) {
+	aWindow = window.open(URL,'songwindow','toolbar=no,width=450,height=425,status=no,scrollbars=no,resize=no,menubar=no');
+}
+	
+	
+// END HIDE JAVASCRIPT  -->
+
+</script>
+</head>
+
+<body id="musicPage" bgcolor="#000000" text="#000000" topmargin=0 leftmargin=0 marginheight=0 marginwidth=0
+onLoad="WM_preloadImages('img/port_on.gif','img/music_on.gif','img/visual_on.gif','img/bio_on.gif','img/ramblings_on.gif','img/home_sm_on.gif','img/mail_sm_on.gif','img/ss_sm_on.gif'); for(argx=1;argx<61;argx++) {WM_preloadImages('img/matt/' + argx + '.jpg');};">
+<div class="theBanner"><span>This page circa 1999!</span></div>
+<table width=100% align=center border=0 cellpadding=0 cellspacing=0 bgcolor="#000000">
+  <tr>
+    <td><table width=720 align=center border=0 cellpadding=0 cellspacing=0 bgcolor="#336633">
+        <tr>
+          <td><img src="img/px_trans.gif" width=100% height=10></td>
+        </tr>
+        <tr>
+          <td><table width=700 align=center border=0 cellpadding=0 cellspacing=0 bgcolor="#CCFFCC">
+              <!--	<tr>
+	<td width=275 height=1 align=left><img src="img/px_trans.gif" height=1 width=255></td>
+	<tr><td><img src="img/px_trans.gif" width=100% height=1></td></tr> -->
+              
+              <tr>
+                <td width=425 align=left bgcolor="#66CC99"><img src="img/head_music.gif" width="400" height="33"></td>
+                <td bgcolor="#99CC66" align=right><a href="http://www.secretagentmen.com/" onMouseOver="swapImage(miniSS,'img/ss_sm_on.gif');" onMouseOut="swapImage(miniSS,'img/ss_sm_off.gif');"><img src="img/ss_sm_off.gif" width="45" height="30" name="miniSS" border=0></a> <a href="mailto:mattlaurence@gmail.com" onMouseOver="swapImage(minimail,'img/mail_sm_on.gif');" onMouseOut="swapImage(minimail,'img/mail_sm_off.gif');"><img src="img/mail_sm_off.gif" width="38" height="30" name="minimail" border=0></a> <a href="http://www.mattlaurence.com/newsite/" onMouseOver="swapImage(minihome,'img/home_sm_on.gif');" onMouseOut="swapImage(minihome,'img/home_sm_off.gif');"><img src="img/home_sm_off.gif" width="31" height="30" name="minihome" border=0></a></td>
+              </tr>
+              <!-- MAIN MENU -->
+              <tr>
+                <td width=425 align=center valign=middle rowspan=99 bgcolor="#66CC66"><table width=425 align=left border=0 cellpadding=0 cellspacing=0 bgcolor="#66CC66">
+                    <tr>
+                      <td valign=top align=left><img src="img/px_trans.gif" width="420" height="15"></td>
+                    </tr>
+                    <tr>
+                      <td valign=top align=left><object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="425" height="400" id="music_content_home" align="middle">
+                          <param name="allowScriptAccess" value="sameDomain" />
+                          <param name="movie" value="swfs/music_content_home.swf" />
+                          <param name="loop" value="false" />
+                          <param name="menu" value="false" />
+                          <param name="quality" value="high" />
+                          <param name="scale" value="exactfit" />
+                          <param name="wmode" value="transparent" />
+                          <param name="bgcolor" value="#66cc66" />
+                          <embed src="swfs/music_content_home.swf" loop="false" menu="false" quality="high" scale="exactfit" wmode="transparent" bgcolor="#66cc66" width="425" height="400" name="music_content_home" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
+                        </object></td>
+                    </tr>
+                  </table></td>
+                <td width=275 align=left valign=top><table width=275 align=left border=0 cellpadding=0 cellspacing=0>
+                    <tr>
+                      <td><br />
+                        <div align=center style="cursor: pointer; padding-top: 10em;"><a onClick="openWin('music_solo.html');" class="matt_footer">Click here to open the old-school jukebox<br />without any tunes newer than about 1999 in its<br />own window so you can listen while you surf!</a></div></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+        </tr>
+        <tr>
+          <td><img src="img/px_trans.gif" width=100% height=10></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
