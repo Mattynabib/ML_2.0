@@ -1,6 +1,6 @@
 {
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
-  "creatorBuild" : "7978",
+  "creatorBuild" : "8283",
   "files" : {
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -14,27 +14,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/apple-touch-icon.png" : {
+    "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/apple-touch-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/apple-touch-icon.png",
-      "initialSize" : 1144,
-      "fileType" : 8192
-    },
-    "\/img\/responsiveness2.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/responsiveness2.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/responsiveness2.jpg",
-      "initialSize" : 52063,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
@@ -46,6 +33,17 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/plugins-ck.js",
       "fileType" : 64
+    },
+    "\/img\/responsiveness2.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/responsiveness2.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/responsiveness2.jpg",
+      "initialSize" : 52063,
+      "fileType" : 4096
     },
     "\/img\/tweets2.png" : {
       "ignoreWasSetByUser" : 0,
@@ -69,15 +67,6 @@
       "initialSize" : 35600,
       "fileType" : 4096
     },
-    "\/404 (1).html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/404 (1).html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/img\/facebookIcon1.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -88,6 +77,15 @@
       "outputAbbreviatedPath" : "\/img\/facebookIcon1.png",
       "initialSize" : 2185,
       "fileType" : 8192
+    },
+    "\/404 (1).html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/404 (1).html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/matt_styles.css" : {
       "ignoreWasSetByUser" : 0,
@@ -184,6 +182,17 @@
       "initialSize" : 52605,
       "fileType" : 4096
     },
+    "\/js\/respond.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/respond.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/respond.min-ck.js",
+      "fileType" : 64
+    },
     "\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -195,17 +204,6 @@
       "outputAbbreviatedPath" : "\/css\/ie.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/js\/respond.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/respond.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/respond.min-ck.js",
-      "fileType" : 64
     },
     "\/apple-touch-icon (1).png" : {
       "ignoreWasSetByUser" : 0,
@@ -257,7 +255,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/screen.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/apple-touch-icon-144x144-precomposed (1).png" : {
@@ -429,7 +427,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/print.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/img\/tweetbass.png" : {
@@ -580,7 +578,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/css\/main.css",
-      "outputAbbreviatedPath" : "No Output Path",
+      "outputAbbreviatedPath" : "\/No Output Path",
       "fileType" : 16
     },
     "\/js\/vendor\/modernizr-2.6.1.min.js" : {
@@ -638,14 +636,16 @@
       "initialSize" : 1144,
       "fileType" : 8192
     },
-    "\/css\/ie.css" : {
+    "\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/apple-touch-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/apple-touch-icon.png",
+      "initialSize" : 1144,
+      "fileType" : 8192
     }
   },
   "manualImportLinks" : [
@@ -653,6 +653,7 @@
   ],
   "projectSettings" : {
     "hamlNoEscapeInAttributes" : 0,
+    "kitAutoOutputPathStyle" : 2,
     "lessOutputStyle" : 0,
     "hamlAutoOutputPathReplace2" : "",
     "draggedImportConcatenationStyle" : 1,
@@ -678,12 +679,13 @@
     "jsCheckerReservedNamesString" : "",
     "javascriptOutputStyle" : 1,
     "stylusDebugStyle" : 0,
-    "hamlUseCDATA" : false,
+    "hamlUseCDATA" : 0,
     "hamlAutoOutputPathStyle" : 0,
     "sassDebugStyle" : 0,
     "hamlOutputStyle" : 0,
     "stylusAutoOutputPathRelativePath" : "..\/css",
     "jsCheckerIndent" : 4,
+    "kitAutoOutputPathRelativePath" : "..\/html",
     "lessAutoOutputPathReplace2" : "css",
     "jadeAutoOutputPathReplace2" : "",
     "shouldRunBless" : 0,
@@ -708,7 +710,10 @@
     "coffeeAutoOutputPathReplace1" : "",
     "hamlUseDoubleQuotes" : 0,
     "coffeeAutoOutputPathReplace2" : "",
+    "kitAutoOutputPathReplace1" : "",
     "uglifyReservedNamesString" : "",
+    "coffeeOutputStyle" : 0,
+    "slimAutoOutputPathRelativePath" : "",
     "jsHintFlags" : {
       "latedef" : 1,
       "newcap" : 1,
@@ -716,7 +721,7 @@
       "trailing" : 1,
       "nonew" : 1,
       "withstmt" : 0,
-      "yui" : false,
+      "yui" : 0,
       "mootools" : 0,
       "proto" : 0,
       "boss" : 0,
@@ -753,7 +758,7 @@
       "unused" : 1,
       "debug" : 0,
       "bitwise" : 1,
-      "white" : false,
+      "white" : 0,
       "worker" : 0,
       "browser" : 1,
       "laxcomma" : 0,
@@ -767,8 +772,6 @@
       "laxbreak" : 0,
       "plusplus" : 0
     },
-    "coffeeOutputStyle" : 0,
-    "slimAutoOutputPathRelativePath" : "",
     "jsLintFlags" : {
       "white" : 0,
       "bitwise" : 0,
@@ -794,7 +797,6 @@
       "confusion" : 0,
       "evil" : 0,
       "on" : 0,
-      "cap" : 0,
       "windows" : 0,
       "devel" : 0,
       "rhino" : 0,
@@ -820,13 +822,14 @@
     "slimAutoOutputPathReplace2" : "",
     "jadeCompileDebug" : 1,
     "slimRailsCompatible" : 0,
+    "kitAutoOutputPathReplace2" : "",
     "lessDebugStyle" : 0,
     "javascriptAutoOutputPathRelativePath" : "",
     "slimAutoOutputPathStyle" : 0
   },
   "projectAttributes" : {
     "bourbonEnabled" : 0,
-    "displayValue" : "V6",
+    "displayValue" : "ML_2.0",
     "displayValueWasSetByUser" : 0,
     "compassEnabled" : 0
   }
