@@ -14,14 +14,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/css\/ie.css" : {
+    "\/apple-touch-icon.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/apple-touch-icon.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/apple-touch-icon.png",
+      "initialSize" : 1144,
+      "fileType" : 8192
     },
     "\/js\/plugins.js" : {
       "ignoreWasSetByUser" : 0,
@@ -182,17 +184,6 @@
       "initialSize" : 52605,
       "fileType" : 4096
     },
-    "\/js\/respond.min.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/respond.min.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/respond.min-ck.js",
-      "fileType" : 64
-    },
     "\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -204,6 +195,17 @@
       "outputAbbreviatedPath" : "\/css\/ie.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/js\/respond.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/respond.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/respond.min-ck.js",
+      "fileType" : 64
     },
     "\/apple-touch-icon (1).png" : {
       "ignoreWasSetByUser" : 0,
@@ -483,17 +485,6 @@
       "initialSize" : 27267,
       "fileType" : 4096
     },
-    "\/apple-touch-icon-precomposed.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
-      "initialSize" : 1144,
-      "fileType" : 8192
-    },
     "\/sass\/print.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -505,6 +496,17 @@
       "outputAbbreviatedPath" : "\/css\/print.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/apple-touch-icon-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/apple-touch-icon-precomposed.png",
+      "initialSize" : 1144,
+      "fileType" : 8192
     },
     "\/img\/case_EBE.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -572,14 +574,16 @@
       "initialSize" : 2157,
       "fileType" : 8192
     },
-    "\/css\/main.css" : {
+    "\/js\/main-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/main.css",
-      "outputAbbreviatedPath" : "\/No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/js\/main-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/main-ck-ck.js",
+      "fileType" : 64
     },
     "\/js\/vendor\/modernizr-2.6.1.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -592,17 +596,6 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/modernizr-2.6.1.min-ck.js",
       "fileType" : 64
     },
-    "\/js\/main-ck.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/main-ck.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/main-ck-ck.js",
-      "fileType" : 64
-    },
     "\/img\/case3img.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -613,6 +606,15 @@
       "outputAbbreviatedPath" : "\/img\/case3img.jpg",
       "initialSize" : 9559,
       "fileType" : 4096
+    },
+    "\/css\/main.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/main.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     },
     "\/img\/logo1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -636,16 +638,14 @@
       "initialSize" : 1144,
       "fileType" : 8192
     },
-    "\/apple-touch-icon.png" : {
+    "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/apple-touch-icon.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/apple-touch-icon.png",
-      "initialSize" : 1144,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "\/No Output Path",
+      "fileType" : 16
     }
   },
   "manualImportLinks" : [
